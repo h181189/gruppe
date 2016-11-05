@@ -27,7 +27,7 @@
 				<nav class="header-navbar">
 					<ul>
 						<li><a href="../adrian/">Adrian</a></li>
-						<li><a href="../bendik/">Bendik</a></li>
+						<li><a href="../bendik/" class="menu-active">Bendik</a></li>
 						<li><a href="../daniel/">Daniel</a></li>
 						<li><a href="../hallvard/">Hallvard</a></li>
 						<li><a href="../../project/">Prosjekt</a></li>
@@ -40,14 +40,78 @@
 
 		<!-- CONTENT -->
 		<main class="profile-container">
+			<!-- Infobox -->
+			<table class="infobox">
+				<tr>
+					<th colspan="2">Bendik Mathias Johansen</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<img width="192" src="profile.jpg" alt="Profilbilde" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>Alder</td>
+					<td id="age">19 år</td>
+				</tr>
+				<tr>
+					<td>Github</td>
+					<td><a href="https://github.com/h181189" target="_blank">h181189</a></td>
+				</tr>
+				<tr>
+					<td>Hjemmeby</td>
+					<td><a href="https://www.google.no/maps/place/Bergen/data=!4m2!3m1!1s0x46390d4966767d77:0x9e42a03eb4de0a08?sa=X&ved=0ahUKEwjluMSW15LQAhVJVSwKHWLnAi4Q8gEIHDAA" target="_blank">Bergen</a></td>
+				</tr>
+			</table>
 			
+			<!-- Text -->
 			
+			<article class="profile-text-container">
+				<h2>Dataspråkerfaringer</h2>
+				<p>Jeg har noe erfaring i følgende bibliotek, rammeverk og språk:</p>
+				<ul>
+					<li><a href="http://www.w3schools.com/html/html_css.asp">HTML & CSS</a>
+						<ul>
+							<li><a href="http://sass-lang.com">SASS</a></li>
+							<li><a href="http://getbootstrap.com">Bootstrap</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.w3schools.com/js/">JavaScript</a>
+						<ul>
+							<li><a href="http://jquery.com">jQuery</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.oracle.com/java/index.html">Java</a>
+						<ul>
+							<li><a href="https://libgdx.badlogicgames.com">LibGDX</a></li>
+						</ul>
+					</li>
+					<li><a href="http://www.mysql.com">MySQL</a></li>
+					<li><a href="http://php.net">PHP</a>
+						<ul>
+							<li><a href="https://laravel.com">Laravel</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.python.org">Python</a>	</li>
+				</ul>
+			</article>
 			
+			<article class="profile-text-container">
+				<p>Jeg har ikke tatt noe IT-relatert fag, utenom et kurs i videoredigering på slutten av ungdomsskolen. Det var ikke før på det kurset jeg begynte å bruke Mac. I begynnelsen av videregående, to måneder senere, kjøpte jeg en Mac. Derifra utviklet min interesse for datateknologi seg, og da var det ikke lenge før jeg kunne lage enkle nettsider i HTML og CSS. Jeg fulgte dette opp med å lære JavaScript og PHP. Jeg løste flere oppgaver i Project Euler, og lærte meg tankegangen i algoritmer.</p>
+
+				<p>Jeg hadde vært borti programmering før alt dette, men kom aldri inn i det. Heldigvis kom jeg tilbake til programmering, da jeg hadde lært grunnleggende scripting i JavaScript og PHP. Jeg begynte med Java, og ville veldig gjerne lage et spill. LibGDX hjalp meg med dette, og jeg lagde noe som lignet på Pokémon, men kom aldri veldig langt. Jeg ga meg til slutt, fordi spill ikke interesserte meg nok.</p>
+			</article>
 		</main>
 		<!-- CONTENT END -->
 
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="../../script.js"></script>
+		<script>
+			document.getElementById("age").innerHTML = new Date().getFullYear() - 1997 + " år";
+			document.getElementById("image").onclick = function() {
+				alert("Vennligst hold fingrene unna fatet.");
+			}
+		</script>
 	</body>
 </html>
