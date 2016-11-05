@@ -1,0 +1,94 @@
+/* ELEMENTS - Changing the defaults for elements */
+
+html, body {
+	margin: 0;
+	background-image: url('images/background.jpg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", Helvetica, sans-serif;
+	margin: 0;
+	font-weight: 300;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/* Header classes */
+
+.header {
+	padding: 20px;
+	background-color: rgba(50, 50, 50, 0.6);
+	color: #fff;
+}
+
+.header-side {
+	/* Vertically centers items and adds space between them */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggle-menu {
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.header-navbar {
+	width: 100%;
+	display: none;
+}
+
+.header-navbar > ul {
+	list-style: none;
+	padding: 0;
+}
+
+.header-navbar > ul > li {
+	margin: 10px;
+}
+
+.header-navbar > ul > li > a {
+	display: block;
+	padding: 20px;
+	
+	/* Styles font */
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.header-navbar > ul > li > a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 992px) {
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 50px;
+	}
+
+	.toggle-menu-container {
+		display: none;
+	}
+
+	.header-navbar {
+		display: block;
+	}
+
+	.header-navbar > ul > li {
+		float: left;
+	}
+
+	.header-navbar > ul > li > a {
+		padding: 20px;
+	}
+}
+
+
