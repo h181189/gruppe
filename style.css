@@ -25,7 +25,6 @@ a {
 }
 
 .header-side {
-	/* Vertically centers items and adds space between them */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -34,7 +33,6 @@ a {
 .toggle-menu {
 	padding: 10px;
 	cursor: pointer;
-	/* No select */
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -43,6 +41,7 @@ a {
 .header-navbar {
 	width: 100%;
 	display: none;
+	padding: 10px 0;
 }
 
 .header-navbar > ul {
@@ -59,27 +58,27 @@ a {
 	display: block;
 	padding: 20px;
 	transition: padding-left 250ms ease-out;
-	/* Styles font */
 	font-family: Helvetica, sans-serif;
 	font-weight: 300;
+}
+
+.header-navbar > ul > li > a:hover {
+	padding-left: 25px;
 }
 
 .header-navbar > ul > li > a:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 991px) {
-	.header-navbar > ul > li > a:hover {
-		padding-left: 25px;
-	}
-}
+/* RESPONSIVE DESIGN */
 
-@media screen and (min-width: 992px) {
+/* Small devices */
 
+@media screen and (min-width: 768px) {
 	.header {
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 50px;
+		padding: 20px 2%;
 	}
 
 	.toggle-menu-container {
@@ -92,12 +91,18 @@ a {
 
 	.header-navbar > ul > li {
 		float: left;
-		margin: 0;
+		margin: 0 5px;
 	}
 
-	.header-navbar > ul > li > a {
-		padding: 20px;
+	.header-navbar > ul > li > a:hover {
+		padding-left: 20px;
 	}
 }
 
+/* Medium devices */
 
+@media screen and (min-width: 992px) {
+	.header-navbar > ul > li {
+		margin: 0 15px;
+	}
+}
