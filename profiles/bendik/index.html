@@ -66,7 +66,7 @@
 			
 			<!-- Text -->
 			
-			<article class="profile-text-container">
+			<section class="profile-section">
 				<h2>Dataspråkerfaringer</h2>
 				<p>Jeg har noe erfaring i følgende bibliotek, rammeverk og språk:</p>
 				<ul>
@@ -94,13 +94,14 @@
 					</li>
 					<li><a href="https://www.python.org">Python</a>	</li>
 				</ul>
-			</article>
+			</section>
 			
-			<article class="profile-text-container">
+			<section class="profile-section">
+				<h2>Min IT historie</h2>
 				<p>Jeg har ikke tatt noe IT-relatert fag, utenom et kurs i videoredigering på slutten av ungdomsskolen. Det var ikke før på det kurset jeg begynte å bruke Mac. I begynnelsen av videregående, to måneder senere, kjøpte jeg en Mac. Derifra utviklet min interesse for datateknologi seg, og da var det ikke lenge før jeg kunne lage enkle nettsider i HTML og CSS. Jeg fulgte dette opp med å lære JavaScript og PHP. Jeg løste flere oppgaver i Project Euler, og lærte meg tankegangen i algoritmer.</p>
 
 				<p>Jeg hadde vært borti programmering før alt dette, men kom aldri inn i det. Heldigvis kom jeg tilbake til programmering, da jeg hadde lært grunnleggende scripting i JavaScript og PHP. Jeg begynte med Java, og ville veldig gjerne lage et spill. LibGDX hjalp meg med dette, og jeg lagde noe som lignet på Pokémon, men kom aldri veldig langt. Jeg ga meg til slutt, fordi spill ikke interesserte meg nok.</p>
-			</article>
+			</section>
 		</main>
 		<!-- CONTENT END -->
 
@@ -108,9 +109,22 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="../../script.js"></script>
 		<script>
-			document.getElementById("age").innerHTML = new Date().getFullYear() - 1997 + " år";
+			document.getElementById("age").innerHTML = getAge(27, 5, 1997) + " år";
 			document.getElementById("image").onclick = function() {
 				alert("Vennligst hold fingrene unna fatet.");
+			}
+
+			function getAge(birthday, birthmonth, birthyear) {
+				var now = new Date();
+				var age = now.getFullYear() - birthyear; // Calculates year
+				if (birthmonth === now.getMonth() + 1) { // Checks if it is the current month
+					if (birthday < now.getDate()) { // If so, and date is a future date,
+						age--; // age is subtracted by one
+					}
+				} else if (birthmonth > now.getMonth()) { // If month is a future month
+					age--; // subtract age by one
+				}
+				return age;
 			}
 		</script>
 	</body>

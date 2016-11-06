@@ -61,7 +61,8 @@ a {
 .header-navbar > ul > li > a {
 	display: block;
 	padding: 20px;
-	transition: padding 250ms ease-out;
+	transition: all 150ms ease-out;
+	transition-property: padding, background-color;
 	font-family: Helvetica, sans-serif;
 	font-weight: 300;
 }
@@ -108,9 +109,7 @@ a {
 	font-weight: 300;
 }
 
-/* Containers */
-
-.profile-text-container {
+.profile-section {
 	margin: 30px 0;
 	font-family: Roboto, Helvetica, sans-serif;
 	font-weight: 300;
@@ -118,11 +117,11 @@ a {
 	word-break: break;
 }
 
-.profile-text-container h2 {
+.profile-section h2 {
 	font-weight: bold;
 }
 
-.profile-text-container li {
+.profile-section li {
 	margin: 10px;
 }
 
@@ -157,14 +156,14 @@ a {
 	}
 
 	/* Profile elements */
-	
-	.profile-container {
-		padding: 5%;
-	}
 
 	.infobox {
 		float: right;
 		margin: 20px;
+	}
+
+	.profile-section {
+		width: 75%;
 	}
 }
 
@@ -185,5 +184,9 @@ a {
 	.infobox {
 		margin: auto;
 		float: right;
+	}
+
+	.profile-container {
+		padding: 20px 5%;
 	}
 }
