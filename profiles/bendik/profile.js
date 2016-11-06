@@ -5,7 +5,7 @@ document.getElementById("image").onclick = function() {
 
 function getAge(birthday, birthmonth, birthyear) {
 	var now = new Date();
-	var age = now.getFullYear() - birthyear; // Calculates year
+	var age = now.getFullYear() - birthyear; // Calculates age in years
 	if (birthmonth === now.getMonth() + 1) { // Checks if it is the current month
 		if (birthday < now.getDate()) { // If so, and date is a future date,
 			age--; // age is subtracted by one

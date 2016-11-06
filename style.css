@@ -20,6 +20,22 @@ a:hover {
 	text-decoration: underline;
 }
 
+button {
+	padding: 5px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+	font-family: 'open sans', sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #222;
+}
+
+button:hover {
+	background-color: #eee;
+}
+
 /* Header classes */
 
 .header {
@@ -50,7 +66,7 @@ a:hover {
 .header-navbar {
 	width: 100%;
 	display: none;
-	padding: 10px 0;
+	padding: 10px 0 0 0;
 }
 
 .header-navbar > ul {
@@ -85,9 +101,9 @@ a:hover {
 
 .front-section {
 	width: 80%;
-	padding: 20px 0;
 	margin: 0 auto;
-	font-family: Roboto, Helvetica, sans-serif;
+	padding: 20px 0;
+	font-family: 'open sans', Helvetica, sans-serif;
 	font-weight: 300;
 	color: #333;
 	word-break: break;
@@ -95,6 +111,15 @@ a:hover {
 
 .front-section h2 {
 	font-weight: bold;
+	text-align: center;
+}
+
+.front-section button {
+	margin: 10px;
+}
+
+.fun-section {
+	text-align: center;
 }
 
 .medium-screen {
@@ -109,7 +134,7 @@ a:hover {
 
 .infobox {
 	margin: 0 auto;
-	font-family: Helvetica, sans-serif;
+	font-family: 'open sans', Helvetica, sans-serif;
 	background-color: rgba(255, 255, 255, 0.3);
 	color: #333;
 	border: 1px solid #aaa;
@@ -136,7 +161,7 @@ a:hover {
 
 .profile-section {
 	margin: 30px 0;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: 'open sans', Helvetica, sans-serif;
 	font-weight: 300;
 	color: #333;
 	word-break: break;
@@ -184,8 +209,11 @@ a:hover {
 
 	/* Frontpage elements */
 	
-	.front-main {
+	.front-section-container {
+		width: 90%;
+		margin: 0 auto;
 		display: flex;
+		justify-content: space-around;
 		flex-wrap: wrap;
 	}
 
@@ -197,7 +225,6 @@ a:hover {
 	.medium-screen {
 		display: block;
 	}
-
 
 	/* Profile elements */
 
@@ -215,16 +242,6 @@ a:hover {
 
 @media screen and (min-width: 992px) {
 
-	/* Header elements */
-
-	.header-navbar > ul > li > a {
-		padding: 30px;
-	}
-
-	.header-navbar > ul > li > a:hover {
-		padding-left: 30px;
-	}
-
 	/* Profile elements */
 
 	.infobox {
@@ -234,5 +251,13 @@ a:hover {
 
 	.profile-container {
 		padding: 20px 5%;
+	}
+}
+
+/* Large devices */
+
+@media screen and (min-width: 1200px) {
+	.front-main {
+		padding-top: 5%;
 	}
 }

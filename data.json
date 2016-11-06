@@ -1,0 +1,14 @@
+{
+	"jokes": [
+		"Why do Java developers need glasses? They can't C#.",
+		"It's not a bug, it's an undocumented feature.",
+		"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
+		"There are 10 types of people; those who understand binary and those who don't.",
+		"2b || !2b",
+		"Two bytes meet. First byte asks 'Are you ill?' Second byte replies, 'No, just feeling a bit off...'",
+		"#titanic { float: none }",
+		"Programmer n. [proh-gram-er] an organism that turns caffeine and pizza into software.",
+		"To understand what recursion is, you must first understand recursion.",
+		"Why programmers like UNIX: unzip, strip, touch, finger, grep, mount, fsck, more, yes, fsck, fsck, fsck, umount, sleep"
+	]
+}
