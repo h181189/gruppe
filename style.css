@@ -13,7 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	color: #579;
-	text-decoration: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* Header classes */
@@ -26,6 +30,7 @@ a {
 
 .header a {
 	color: inherit;
+	text-decoration: none;
 }
 
 .header-side {
@@ -78,7 +83,23 @@ a {
 
 /* Frontpage elements */
 
+.front-section {
+	width: 80%;
+	padding: 20px 0;
+	margin: 0 auto;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-weight: 300;
+	color: #333;
+	word-break: break;
+}
 
+.front-section h2 {
+	font-weight: bold;
+}
+
+.medium-screen {
+	display: none;
+}
 
 /* Profile elements */
 
@@ -161,6 +182,23 @@ a {
 		padding-left: 20px;
 	}
 
+	/* Frontpage elements */
+	
+	.front-main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.front-section {
+		width: 40%;
+		float: left;
+	}
+
+	.medium-screen {
+		display: block;
+	}
+
+
 	/* Profile elements */
 
 	.infobox {
@@ -188,7 +226,7 @@ a {
 	}
 
 	/* Profile elements */
-	
+
 	.infobox {
 		margin: auto;
 		float: right;
