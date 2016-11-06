@@ -76,6 +76,10 @@ a {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Frontpage elements */
+
+
+
 /* Profile elements */
 
 .profile-container {
@@ -130,7 +134,9 @@ a {
 /* Small devices */
 
 @media screen and (min-width: 768px) {
+
 	/* Header elements */
+
 	.header {
 		display: flex;
 		justify-content: space-between;
@@ -170,6 +176,7 @@ a {
 /* Medium devices */
 
 @media screen and (min-width: 992px) {
+
 	/* Header elements */
 
 	.header-navbar > ul > li > a {
@@ -179,8 +186,9 @@ a {
 	.header-navbar > ul > li > a:hover {
 		padding-left: 30px;
 	}
-	/* Profile elements */
 
+	/* Profile elements */
+	
 	.infobox {
 		margin: auto;
 		float: right;
