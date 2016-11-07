@@ -33,7 +33,11 @@ button {
 }
 
 button:hover {
-	background-color: #eee;
+	background-color: #fafafa;
+}
+
+button:active {
+	box-shadow: inset 0 0 5px #ccc;
 }
 
 /* Header classes */
@@ -58,9 +62,6 @@ button:hover {
 .toggle-menu {
 	padding: 10px;
 	cursor: pointer;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
 }
 
 .header-navbar {
@@ -106,7 +107,6 @@ button:hover {
 	font-family: 'open sans', Helvetica, sans-serif;
 	font-weight: 300;
 	color: #333;
-	word-break: break;
 }
 
 .front-section h2 {
@@ -164,7 +164,6 @@ button:hover {
 	font-family: 'open sans', Helvetica, sans-serif;
 	font-weight: 300;
 	color: #333;
-	word-break: break;
 }
 
 .profile-section h2 {
@@ -173,6 +172,62 @@ button:hover {
 
 .profile-section li {
 	margin: 10px;
+}
+
+/* Project elements */
+
+.project-content-container {
+	width: 90%;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+.project-content-container p {
+	font-family: 'open sans', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #444;
+}
+
+.project-content-container h2 {
+	font-weight: bold;
+	color: #333;
+}
+
+.project-img-container {
+	text-align: center;
+}
+
+.project-img-container img {
+	margin: 10px;
+}
+
+.project-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(50, 50, 50, 0.6);
+	color: #fff;
+	display: flex;
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.project-footer a {
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	color: #fff;
+	font-family: 'open sans', Helvetica, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	transition: all 150ms ease-out;
+	transition-property: background-color, box-shadow;
+}
+
+.project-footer a:hover {
+	text-decoration: none;
+	background-color: rgba(50, 50, 50, 0.2);
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 /* RESPONSIVE DESIGN */
@@ -252,12 +307,21 @@ button:hover {
 	.profile-container {
 		padding: 20px 5%;
 	}
+
+	/* Project elements */
+
+	.project-content-container {
+		width: 60%;
+	}
 }
 
 /* Large devices */
 
 @media screen and (min-width: 1200px) {
-	.front-main {
+	
+	/* Frontpage and project elements */
+
+	.front-main, .project-main {
 		padding-top: 5%;
 	}
 }

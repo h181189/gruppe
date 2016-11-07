@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="no">
 	<head>
 		<meta charset="UTF-8">
 		<!-- Mobile-first Responsive Design -->
@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header-side">
 				<div>
-					<h1><a href="./">Gruppe 11</a></h1>
+					<h1><a href="../">Gruppe 11</a></h1>
 				</div>
 				<div class="toggle-menu-container">
 					<i class="material-icons toggle-menu">menu</i>
@@ -26,11 +26,11 @@
 			<div class="header-side">
 				<nav class="header-navbar">
 					<ul>
-						<li><a href="profiles/adrian/">Adrian</a></li>
-						<li><a href="profiles/bendik/">Bendik</a></li>
-						<li><a href="profiles/daniel/">Daniel</a></li>
-						<li><a href="profiles/hallvard/">Hallvard</a></li>
-						<li><a href="project/" class="menu-active">Prosjekt</a></li>
+						<li><a href="../profiles/adrian/">Adrian</a></li>
+						<li><a href="../profiles/bendik/">Bendik</a></li>
+						<li><a href="../profiles/daniel/">Daniel</a></li>
+						<li><a href="../profiles/hallvard/">Hallvard</a></li>
+						<li><a href="./" class="menu-active">Prosjekt</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -38,8 +38,28 @@
 		<!-- HEADER END -->
 
 		<!-- CONTENT -->
-		<main>
+		<main class="project-main">
+			<section class="project-content-container">
+				<h2>Prosjektbeskrivelse</h2>
+				<p>Vårt IT-relaterte prosjekt i ING102 faget er å lage en nettside som inneholder anbefalinger av applikasjoner på diverse plattformer på mobil og PC. Etter mye diskusjon kom vi fram til at dette var et prosjekt som alle deltakerne av prosjektet var interessert i. Som følge av at vi alle bruker mange forskjellige applikasjoner daglig, falt det som en god ide å lage en nettside nettopp for å anbefale og finne fram de gode applikasjonene.  Vi vil anbefale og anmelde applikasjoner på mobilplattformene Android og iOS, og på PC-plattformene Windows og macOS.</p>
+			</section>
 
+			<div class="project-content-container">
+				<h2>Statusrapport</h2>
+				<p>Vi startet med prosjektet i uke 37 og har fram til uke 42 fått gjennomført følgende: Opprettet en ufullstendig nettside med nok back-end til å kunne skrive enkle anmeldelser. Meldingene har en unik app-id og en bruker-id som gir oss et godt oppsett. Vi har fått til et delvis fungerende CMS med mål om å kunne registrere brukere, ha god oversikt og redigere meldinger av applikasjoner på nettsiden. Vi har kommet så langt at vi har en fungerende prototype.</p>
+			</div>
+
+			<div class="project-content-container">
+				<div class="project-img-container">
+					<p><i>Et av mange gruppemøter på HiB</i></p>
+					<img width="256" src="projectimage.jpg" alt="Gruppebilde" />
+				</div>
+			</div>
+			
+			<footer class="project-footer">
+					<a href="prosjektbeskrivelse.pdf" class="project-download" target="_blank">Prosjektbeskrivelsen</a>
+					<a href="statusrapport.pdf" class="project-download" target="_blank">Statusrapporten</a>
+			</footer>
 		</main>
 		<!-- CONTENT END -->
 
